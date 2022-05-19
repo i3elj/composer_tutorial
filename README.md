@@ -31,3 +31,13 @@ in the project already ran the `update` command.<br/>
   Therefore, if you are clonning a repo and it's have a `composer.lock` you
 can simply use the command above so that every package installed is all
 the same version which is listed in `composer.lock` file.
+
+## Using `php composer.phar <command>` in a better way
+If you want to use only `composer` as the composer command (assuming you
+installed it locally), you just need to set an alias in your `.bashrc` file or
+any other `*.rc` that you may use.
+```bashrc
+alias composer='./.local/bin/composer.phar'
+```
+  This will make the command `composer` behave as the same as `php .local/
+bin/composer.phar`
