@@ -1,0 +1,2 @@
+# removing all third-party packages from git
+vendor/
